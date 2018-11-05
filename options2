@@ -34,11 +34,6 @@ option2 :-
 	Courses = [course(_,_, _,podium), _, _, _],
 	print_courses(Courses).
 
-% Each course is describe by a structure course with 5 elements
-% representing color, nationality, pet, drink, and cigarette.
-%
-% This courses predicate describes the row of five courses (with
-% all information unknown.
 
 courses([
 	course(_, _, _, _),
@@ -60,8 +55,4 @@ print_courses([A|B]) :- !,
 	print_courses(B).
 print_courses([]).
 
-%
-% This next line is a directive to automatically run
-% the zebra predicate when this file is consulted.
-%
 :- initialization(option2).
