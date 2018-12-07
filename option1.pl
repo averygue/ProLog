@@ -1,5 +1,6 @@
 % First puzzle
-
+%Avery Guethinig and Michael Fuss %
+% Cosc3410 Mike Slattery %
 order([eat(namoi,_),eat(salim,_),eat(edward,_),eat(joan,_)]).
 
 solution(List) :- order(List),

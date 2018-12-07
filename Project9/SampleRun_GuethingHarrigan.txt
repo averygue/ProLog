@@ -1,0 +1,32 @@
+
+AveryGueth:~/Desktop: erl
+Erlang/OTP 21 [erts-10.1.3] [source] [64-bit] [smp:4:4] [ds:4:4:10] [async-threads:1] [hipe] [dtrace]
+
+Eshell V10.1.3  (abort with ^G)
+1> c(weepod).
+{ok,weepod}
+2> Pid = weepod:start().
+<0.84.0>
+3> weepod:send_wait(Pid,show_shelves).
+[{lettuce,1.5},{soup,2.35},{cupcake,0.75}]
+4> weepod:send_wait(Pid,{add_item,tomato,2.5}).
+ok
+5> weepod:send_wait(Pid,show_shelves).         
+[{lettuce,1.5},{soup,2.35},{cupcake,0.75},{tomato,2.5}]
+6> weepod:send_wait(Pid,{choose,tomato,2}).    
+ok
+7> weepod:send_wait(Pid,show_basket).          
+[{tomato,2}]
+8> weepod:send_wait(Pid,{remove,tomato}).  
+ok
+9> weepod:send_wait(Pid,show_shelves).     
+[{lettuce,1.5},{soup,2.35},{cupcake,0.75},{tomato,2.5}]
+10> weepod:send_wait(Pid,show_basket).    
+[]
+11> weepod:send_wait(Pid,{choose,tomato,2}).
+ok
+12> weepod:send_wait(Pid,checkout).         
+5.0
+13> weepod:send_wait(Pid,stdis).   
+3.75
+14> 

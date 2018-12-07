@@ -1,0 +1,27 @@
+%Avery Guethinig and Michael Fuss %
+% Cosc3410 Mike Slattery %
+
+Sample run:
+AveryGueth:~/ProLog: swipl option2.pl 
+course(artificialIntelligence,310,cheng,podium)
+course(operatingSystems,1,saunders,clickers)
+course(compilers,112,shariar,whiteboard)
+course(hardware,126,adams,videoProjector)
+Welcome to SWI-Prolog (threaded, 64 bits, version 7.7.20)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit http://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Cannot read termcap database;
+using dumb terminal settings.
+?- [option2].
+course(artificialIntelligence,310,cheng,podium)
+course(operatingSystems,1,saunders,clickers)
+course(compilers,112,shariar,whiteboard)
+course(hardware,126,adams,videoProjector)
+true.
+
+?- solution(X).
+X = [eat(namoi, salad), eat(salim, pizza), eat(edward, tacos), eat(joan, burgers)] .

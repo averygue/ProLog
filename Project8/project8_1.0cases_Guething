@@ -1,0 +1,13 @@
+//See .rkt program for cases
+Welcome to DrRacket, version 7.0 [3m].
+Language: plai, with debugging; memory limit: 128 MB.
+(boolType)
+(numType)
+(numType)
+(boolType)
+(boolType)
+(numType)
+(numType)
+> 
+
+
